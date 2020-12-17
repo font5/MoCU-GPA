@@ -6,6 +6,8 @@
     <title>MoCU GPA Calculator</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
+    <script src="oninput-marks.js" defer></script>
+    <script src="each-gpa.js" defer></script>
 </head>
 <body>
     <header>Welcome to MOCU GPA Calculator <br> Crafted by Shemdoe</header>
@@ -19,15 +21,15 @@
 
     <div id="select-course">
         Select below number of courses <br>
-        <select id="number-of-courses">
+        <select id="number-of-courses" onchange="selectingNumberOfCourses()">
             <option value="select">How many courses do you have?</option>
-            <option value="five" onclick="fiveCourses()" id="fivec">5</option>
-            <option value="six" onclick="sixCourses()" id="sixc">6</option>
-            <option value="seven" onclick="sevenCourses()" id="sevenc">7</option>
-            <option value="eight" onclick="eightCourses()" id="eightc">8</option>
-            <option value="nine" onclick="nineCourses()" id="ninec">9</option>
-            <option value="ten" onclick="tenCourses" id="tenc">10</option>
-            <option value="eleven" onclick="elevenCourses()" id="elevenc">11</option>
+            <option value="five" id="fivec">5</option>
+            <option value="six" id="sixc">6</option>
+            <option value="seven" id="sevenc">7</option>
+            <option value="eight" id="eightc">8</option>
+            <option value="nine" id="ninec">9</option>
+            <option value="ten" id="tenc">10</option>
+            <option value="eleven" id="elevenc">11</option>
         </select>
     </div>
     <br>
