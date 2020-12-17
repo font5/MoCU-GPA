@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MoCU GPA Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <script src="oninput-marks.js" defer></script>
+    <script src="each-gpa.js" defer></script>
+</head>
+<body>
+    <header>Welcome to MOCU GPA Calculator <br> Crafted by Shemdoe</header>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="maelezo" id="maelezo1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, voluptate?
+    </div>
+
+    <div id="select-course">
+        Select below number of courses <br>
+        <select id="number-of-courses">
+            <option value="select">How many courses do you have?</option>
+            <option value="five" onclick="fiveCourses()" id="fivec">5</option>
+            <option value="six" onclick="sixCourses()" id="sixc">6</option>
+            <option value="seven" onclick="sevenCourses()" id="sevenc">7</option>
+            <option value="eight" onclick="eightCourses()" id="eightc">8</option>
+            <option value="nine" onclick="nineCourses()" id="ninec">9</option>
+            <option value="ten" onclick="tenCourses" id="tenc">10</option>
+            <option value="eleven" onclick="elevenCourses()" id="elevenc">11</option>
+        </select>
+    </div>
+    <br>
+    <hr>
+    <div id="courses">
+        <br>
+        <h1 style="text-align: center; font-size: 24px;"> <u>Fill out your Course Work and UE marks below</u> </h1>
+        <div class="taja-courses taja-tano-za-kwanza" id="taja-first">1<sup>st</sup> Course's Marks</div>
+        <div class="kozi tano" id="course1">
+            <div class="course-work">
+                C/Work <br>
+                <input type="number" id="input-course-work1" oninput="cWork1()" placeholder="C/W marks">
+            </div>
+            <div id="plus-icon"> <br> ➕</div>
+            <div class="final">
+                UE <br>
+                <input type="number" id="input-final1" oninput="ue1()" placeholder="UE marks">
+            </div>
+            <div id="equal-icon"> <br> =</div>
+            <div class="total">
+                Total <br>
+                <input type="text" class="total" id="total-1" readonly>
+            </div>
+        </div>
+        <hr>
+
+        <div class="taja-courses taja-tano-za-kwanza" id="taja-second">2<sup>nd</sup> Course's Marks</div>
+        <div class="kozi tano" id="course2">
+            <div class="course-work">
+                C/Work <br>
+                <input type="number" id="input-course-work2" oninput="cWork2()" placeholder="C/W marks">
+            </div>
+            <div id="plus-icon"> <br> ➕</div>
+            <div class="final">
+                UE <br>
+                <input type="number" id="input-final2" oninput="ue2()" placeholder="UE marks">
+            </div>
+            <div id="equal-icon"> <br> =</div>
+            <div class="total">
+                Total <br>
+                <input type="text" id="total-2" class="total" readonly>
+            </div>
+        </div>
+        <hr>
+
+        <div class="taja-courses taja-tano-za-kwanza" id="taja-third">3<sup>rd</sup> Course's Marks</div>
+        <div class="kozi tano" id="course3">
+            <div class="course-work">
+                C/Work <br>
+                <input type="number" id="input-course-work3" oninput="cWork3()" placeholder="C/W marks">
+            </div>
+            <div id="plus-icon"> <br> ➕</div>
+            <div class="final">
+                UE <br>
+                <input type="number" id="input-final3" oninput="ue3()" placeholder="UE marks">
+            </div>
+            <div id="equal-icon"> <br> =</div>
+            <div class="total">
+                Total <br>
+                <input type="text" id="total-3" class="total" readonly>
+            </div>
+        </div>
+        <hr>
+
+        <div class="taja-courses taja-tano-za-kwanza" id="taja-fourth">4<sup>th</sup> Course's Marks</div>
+        <div class="kozi tano" id="course4">
+            <div class="course-work">
+                C/Work <br>
+                <input type="number" id="input-course-work4" oninput="cWork4()" placeholder="C/W marks">
+            </div>
+            <div id="plus-icon"> <br> ➕</div>
+            <div class="final">
+                UE <br>
+                <input type="number" id="input-final4" oninput="ue4()" placeholder="UE marks">
+            </div>
+            <div id="equal-icon"> <br> =</div>
+            <div class="total">
+                Total <br>
+                <input type="text" id="total-4" class="total" readonly>
+            </div>
+        </div>
+        <hr>
+
+        <div class="taja-courses taja-tano-za-kwanza" id="taja-fifth">5<sup>th</sup> Course's Marks</div>
+        <div class="kozi tano" id="course5">
+            <div class="course-work">
+                C/Work <br>
+                <input type="number" id="input-course-work5" oninput="cWork5()" placeholder="C/W marks">
+            </div>
+            <div id="plus-icon"> <br> ➕</div>
+            <div class="final">
+                UE <br>
+                <input type="number" id="input-final5" oninput="ue5()" placeholder="UE marks">
+            </div>
+            <div id="equal-icon"> <br> =</div>
+            <div class="total">
+                Total <br>
+                <input type="text" id="total-5" class="total" readonly>
+            </div>
+        </div>
+        <hr>
+
+        <div class="taja-courses" id="taja-sixth">6<sup>th</sup> Course's Marks</div>
+        <div class="kozi ficha-kozi" id="course6">
+            <div class="course-work">
+                C/Work <br>
+                <input type="number" id="input-course-work6" oninput="cWork6()" placeholder="C/W marks">
+            </div>
+            <div id="plus-icon"> <br> ➕</div>
+            <div class="final">
+                UE <br>
+                <input type="number" id="input-final6" oninput="ue6()" placeholder="UE marks">
+            </div>
+            <div id="equal-icon"> <br> =</div>
+            <div class="total">
+                Total <br>
+                <input type="text" id="total-6" class="total" readonly>
+            </div>
+        </div>
+        <hr>
+
+        <div class="taja-courses" id="taja-seventh">7<sup>th</sup> Course's Marks</div>
+        <div class="kozi ficha-kozi" id="course7">
+            <div class="course-work">
+                C/Work <br>
+                <input type="number" id="input-course-work7" oninput="cWork7()" placeholder="C/W marks">
+            </div>
+            <div id="plus-icon"> <br> ➕</div>
+            <div class="final">
+                UE <br>
+                <input type="number" id="input-final7" oninput="ue7()" placeholder="UE marks">
+            </div>
+            <div id="equal-icon"> <br> =</div>
+            <div class="total">
+                Total <br>
+                <input type="text" id="total-7" class="total" readonly>
+            </div>
+        </div>
+        <hr>
+
+        <div class="taja-courses" id="taja-eighth">8<sup>th</sup> Course's Marks</div>
+        <div class="kozi ficha-kozi" id="course8">
+            <div class="course-work">
+                C/Work <br>
+                <input type="number" id="input-course-work8" oninput="cWork8()" placeholder="C/W marks">
+            </div>
+            <div id="plus-icon"> <br> ➕</div>
+            <div class="final">
+                UE <br>
+                <input type="number" id="input-final8" oninput="ue8()" placeholder="UE marks">
+            </div>
+            <div id="equal-icon"> <br> =</div>
+            <div class="total">
+                Total <br>
+                <input type="text" id="total-8" class="total" readonly>
+            </div>
+        </div>
+        <hr>
+
+        <div class="taja-courses" id="taja-nineth">9<sup>th</sup> Course's Marks</div>
+        <div class="kozi ficha-kozi" id="course9">
+            <div class="course-work">
+                C/Work <br>
+                <input type="number" id="input-course-work9" oninput="cWork9()" placeholder="C/W marks">
+            </div>
+            <div id="plus-icon"> <br> ➕</div>
+            <div class="final">
+                UE <br>
+                <input type="number" id="input-final9" oninput="ue9()" placeholder="UE marks">
+            </div>
+            <div id="equal-icon"> <br> =</div>
+            <div class="total">
+                Total <br>
+                <input type="text" id="total-9" class="total" readonly>
+            </div>
+        </div>
+        <hr>
+
+        <div class="taja-courses" id="taja-tenth">10<sup>th</sup> Course's Marks</div>
+        <div class="kozi ficha-kozi" id="course10">
+            <div class="course-work">
+                C/Work <br>
+                <input type="number" id="input-course-work10" oninput="cWork10()" placeholder="C/W marks">
+            </div>
+            <div id="plus-icon"> <br> ➕</div>
+            <div class="final">
+                UE <br>
+                <input type="number" id="input-final10" oninput="ue10()" placeholder="UE marks">
+            </div>
+            <div id="equal-icon"> <br> =</div>
+            <div class="total">
+                Total <br>
+                <input type="text" id="total-10" class="total" readonly>
+            </div>
+        </div>
+        <hr>
+
+        <div class="taja-courses" id="taja-eleventh">11<sup>th</sup> Course's Marks</div>
+        <div class="kozi ficha-kozi" id="course11">
+            <div class="course-work">
+                C/Work <br>
+                <input type="number" id="input-course-work11" oninput="cWork11()" placeholder="C/W marks">
+            </div>
+            <div id="plus-icon"> <br> ➕</div>
+            <div class="final">
+                UE <br>
+                <input type="number" id="input-final11" oninput="ue11()" placeholder="UE marks">
+            </div>
+            <div id="equal-icon"> <br> =</div>
+            <div class="total">
+                Total <br>
+                <input type="text" id="total-11" class="total" readonly>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div id="calculate-button">
+    <button class="all-gpa-btn" id="gpa-btn1">CALCULATE GPA</button>
+    <button class="all-gpa-btn" id="gpa-btn2">CALCULATE GPA</button>
+    <button class="all-gpa-btn" id="gpa-btn3">CALCULATE GPA</button>
+    <button class="all-gpa-btn" id="gpa-btn4">CALCULATE GPA</button>
+    <button class="all-gpa-btn" id="gpa-btn5">CALCULATE GPA</button>
+    <button class="all-gpa-btn" id="gpa-btn6">CALCULATE GPA</button>
+    <button class="all-gpa-btn" id="gpa-btn7">CALCULATE GPA</button>
+        <div id="gpa-yako"></div>
+    </div>
+    <br>
+    <div class="maelezo" id="maelezo2">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis eius molestias et omnis velit eligendi rerum cum non, libero aliquid tempora laborum illum, alias facilis?
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <footer>
+        Crafted with ❤ by Shemdoe <br>
+        BSc.BICT2 Moshi Co-Operative University <br>
+        <div id="useful-links">
+            Useful Links
+        </div>
+    </footer>
+</body>
+</html>

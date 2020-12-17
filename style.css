@@ -1,0 +1,103 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: aliceblue;
+    position: relative;
+}
+
+header {
+    background-color: lightgreen;
+    height: fit-content;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    position: absolute;
+    top: 0;
+}
+
+.maelezo {
+    padding: 8px;
+    background-color: white;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+#select-course {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+select {
+    height: 40px;
+    border-radius: 12px;
+    width: 80%;
+    text-align: center;
+}
+
+#courses {
+    background-color: bisque;
+    border-top-right-radius: 24px;
+    border-top-left-radius: 24px;
+    display: none;
+}
+
+.kozi {
+    display: none;
+    justify-content: space-between;
+    padding: 10px;
+    width: 100%;
+}
+
+.kozi input {
+    width: 60px;
+    border-radius: 4px;
+    height: 30px;
+}
+
+.total {
+    background-color: black;
+    color: white;
+    border-bottom: none;
+    border-right: none;
+    border-left: none;
+    border-top: 2px magenta solid;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+}
+
+#calculate-button {
+    text-align: center;
+}
+
+#calculate-button button {
+    padding: 10px;
+    font-size: large;
+    font-weight: bold;
+    border-radius: 8px;
+    display: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.taja-courses {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-weight: bold;
+    display: none;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: fit-content;
+    padding: 8px;
+}
