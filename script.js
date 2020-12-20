@@ -270,3 +270,8 @@ function elevenCourses() {
     koziTitle.title10.style.display = 'block'
     koziTitle.title11.style.display = 'block'
 }
+
+function mama() {
+    document.getElementById('number-of-courses').value = 'select'
+    window.location.reload()
+}

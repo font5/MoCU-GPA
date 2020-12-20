@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
     <script src="oninput-marks.js" defer></script>
-    <script src="each-gpa.js" defer></script>
+    <script src="gpa-for-five-courses.js" defer></script>
 </head>
 <body>
     <header>Welcome to MOCU GPA Calculator <br> Crafted by Shemdoe</header>
@@ -22,7 +22,7 @@
     <div id="select-course">
         Select below number of courses <br>
         <select id="number-of-courses" onchange="selectingNumberOfCourses()">
-            <option value="select">How many courses do you have?</option>
+            <option value="select" id="default">How many courses do you have?</option>
             <option value="five" id="fivec">5</option>
             <option value="six" id="sixc">6</option>
             <option value="seven" id="sevenc">7</option>
@@ -41,17 +41,17 @@
         <div class="kozi tano" id="course1">
             <div class="course-work">
                 C/Work <br>
-                <input type="number" id="input-course-work1" oninput="cWork1()" placeholder="C/W marks">
+                <input type="number" value="0" id="input-course-work1" oninput="cWork1()" placeholder="C/W marks">
             </div>
             <div id="plus-icon"> <br> ➕</div>
             <div class="final">
                 UE <br>
-                <input type="number" id="input-final1" oninput="ue1()" placeholder="UE marks">
+                <input type="number" value="0" id="input-final1" oninput="ue1()" placeholder="UE marks">
             </div>
             <div id="equal-icon"> <br> =</div>
             <div class="total">
                 Total <br>
-                <input type="text" class="total" id="total-1" readonly>
+                <input type="text" value="0" class="total" id="total-1" readonly>
             </div>
         </div>
         <hr>
@@ -60,17 +60,17 @@
         <div class="kozi tano" id="course2">
             <div class="course-work">
                 C/Work <br>
-                <input type="number" id="input-course-work2" oninput="cWork2()" placeholder="C/W marks">
+                <input type="number" value="0" id="input-course-work2" oninput="cWork2()" placeholder="C/W marks">
             </div>
             <div id="plus-icon"> <br> ➕</div>
             <div class="final">
                 UE <br>
-                <input type="number" id="input-final2" oninput="ue2()" placeholder="UE marks">
+                <input type="number" value="0" id="input-final2" oninput="ue2()" placeholder="UE marks">
             </div>
             <div id="equal-icon"> <br> =</div>
             <div class="total">
                 Total <br>
-                <input type="text" id="total-2" class="total" readonly>
+                <input type="text" value="0" id="total-2" class="total" readonly>
             </div>
         </div>
         <hr>
@@ -79,17 +79,17 @@
         <div class="kozi tano" id="course3">
             <div class="course-work">
                 C/Work <br>
-                <input type="number" id="input-course-work3" oninput="cWork3()" placeholder="C/W marks">
+                <input type="number" value="0" id="input-course-work3" oninput="cWork3()" placeholder="C/W marks">
             </div>
             <div id="plus-icon"> <br> ➕</div>
             <div class="final">
                 UE <br>
-                <input type="number" id="input-final3" oninput="ue3()" placeholder="UE marks">
+                <input type="number" value="0" id="input-final3" oninput="ue3()" placeholder="UE marks">
             </div>
             <div id="equal-icon"> <br> =</div>
             <div class="total">
                 Total <br>
-                <input type="text" id="total-3" class="total" readonly>
+                <input type="text" value="0" id="total-3" class="total" readonly>
             </div>
         </div>
         <hr>
@@ -98,17 +98,17 @@
         <div class="kozi tano" id="course4">
             <div class="course-work">
                 C/Work <br>
-                <input type="number" id="input-course-work4" oninput="cWork4()" placeholder="C/W marks">
+                <input type="number" value="0" id="input-course-work4" oninput="cWork4()" placeholder="C/W marks">
             </div>
             <div id="plus-icon"> <br> ➕</div>
             <div class="final">
                 UE <br>
-                <input type="number" id="input-final4" oninput="ue4()" placeholder="UE marks">
+                <input type="number" value="0" id="input-final4" oninput="ue4()" placeholder="UE marks">
             </div>
             <div id="equal-icon"> <br> =</div>
             <div class="total">
                 Total <br>
-                <input type="text" id="total-4" class="total" readonly>
+                <input type="text" value="0" id="total-4" class="total" readonly>
             </div>
         </div>
         <hr>
@@ -117,17 +117,17 @@
         <div class="kozi tano" id="course5">
             <div class="course-work">
                 C/Work <br>
-                <input type="number" id="input-course-work5" oninput="cWork5()" placeholder="C/W marks">
+                <input type="number" value="0" id="input-course-work5" oninput="cWork5()" placeholder="C/W marks">
             </div>
             <div id="plus-icon"> <br> ➕</div>
             <div class="final">
                 UE <br>
-                <input type="number" id="input-final5" oninput="ue5()" placeholder="UE marks">
+                <input type="number" value="0" id="input-final5" oninput="ue5()" placeholder="UE marks">
             </div>
             <div id="equal-icon"> <br> =</div>
             <div class="total">
                 Total <br>
-                <input type="text" id="total-5" class="total" readonly>
+                <input type="text" value="0" id="total-5" class="total" readonly>
             </div>
         </div>
         <hr>
@@ -136,17 +136,17 @@
         <div class="kozi ficha-kozi" id="course6">
             <div class="course-work">
                 C/Work <br>
-                <input type="number" id="input-course-work6" oninput="cWork6()" placeholder="C/W marks">
+                <input type="number" value="0" id="input-course-work6" oninput="cWork6()" placeholder="C/W marks">
             </div>
             <div id="plus-icon"> <br> ➕</div>
             <div class="final">
                 UE <br>
-                <input type="number" id="input-final6" oninput="ue6()" placeholder="UE marks">
+                <input type="number" value="0" id="input-final6" oninput="ue6()" placeholder="UE marks">
             </div>
             <div id="equal-icon"> <br> =</div>
             <div class="total">
                 Total <br>
-                <input type="text" id="total-6" class="total" readonly>
+                <input type="text" value="0" id="total-6" class="total" readonly>
             </div>
         </div>
         <hr>
@@ -155,17 +155,17 @@
         <div class="kozi ficha-kozi" id="course7">
             <div class="course-work">
                 C/Work <br>
-                <input type="number" id="input-course-work7" oninput="cWork7()" placeholder="C/W marks">
+                <input type="number" value="0" id="input-course-work7" oninput="cWork7()" placeholder="C/W marks">
             </div>
             <div id="plus-icon"> <br> ➕</div>
             <div class="final">
                 UE <br>
-                <input type="number" id="input-final7" oninput="ue7()" placeholder="UE marks">
+                <input type="number" value="0" id="input-final7" oninput="ue7()" placeholder="UE marks">
             </div>
             <div id="equal-icon"> <br> =</div>
             <div class="total">
                 Total <br>
-                <input type="text" id="total-7" class="total" readonly>
+                <input type="text" value="0" id="total-7" class="total" readonly>
             </div>
         </div>
         <hr>
@@ -174,17 +174,17 @@
         <div class="kozi ficha-kozi" id="course8">
             <div class="course-work">
                 C/Work <br>
-                <input type="number" id="input-course-work8" oninput="cWork8()" placeholder="C/W marks">
+                <input type="number" value="0" id="input-course-work8" oninput="cWork8()" placeholder="C/W marks">
             </div>
             <div id="plus-icon"> <br> ➕</div>
             <div class="final">
                 UE <br>
-                <input type="number" id="input-final8" oninput="ue8()" placeholder="UE marks">
+                <input type="number" value="0" id="input-final8" oninput="ue8()" placeholder="UE marks">
             </div>
             <div id="equal-icon"> <br> =</div>
             <div class="total">
                 Total <br>
-                <input type="text" id="total-8" class="total" readonly>
+                <input type="text" value="0" id="total-8" class="total" readonly>
             </div>
         </div>
         <hr>
@@ -193,17 +193,17 @@
         <div class="kozi ficha-kozi" id="course9">
             <div class="course-work">
                 C/Work <br>
-                <input type="number" id="input-course-work9" oninput="cWork9()" placeholder="C/W marks">
+                <input type="number" value="0" id="input-course-work9" oninput="cWork9()" placeholder="C/W marks">
             </div>
             <div id="plus-icon"> <br> ➕</div>
             <div class="final">
                 UE <br>
-                <input type="number" id="input-final9" oninput="ue9()" placeholder="UE marks">
+                <input type="number" value="0" id="input-final9" oninput="ue9()" placeholder="UE marks">
             </div>
             <div id="equal-icon"> <br> =</div>
             <div class="total">
                 Total <br>
-                <input type="text" id="total-9" class="total" readonly>
+                <input type="text" value="0" id="total-9" class="total" readonly>
             </div>
         </div>
         <hr>
@@ -212,17 +212,17 @@
         <div class="kozi ficha-kozi" id="course10">
             <div class="course-work">
                 C/Work <br>
-                <input type="number" id="input-course-work10" oninput="cWork10()" placeholder="C/W marks">
+                <input type="number" value="0" id="input-course-work10" oninput="cWork10()" placeholder="C/W marks">
             </div>
             <div id="plus-icon"> <br> ➕</div>
             <div class="final">
                 UE <br>
-                <input type="number" id="input-final10" oninput="ue10()" placeholder="UE marks">
+                <input type="number" value="0" id="input-final10" oninput="ue10()" placeholder="UE marks">
             </div>
             <div id="equal-icon"> <br> =</div>
             <div class="total">
                 Total <br>
-                <input type="text" id="total-10" class="total" readonly>
+                <input type="text" value="0" id="total-10" class="total" readonly>
             </div>
         </div>
         <hr>
@@ -231,32 +231,34 @@
         <div class="kozi ficha-kozi" id="course11">
             <div class="course-work">
                 C/Work <br>
-                <input type="number" id="input-course-work11" oninput="cWork11()" placeholder="C/W marks">
+                <input type="number" value="0" id="input-course-work11" oninput="cWork11()" placeholder="C/W marks">
             </div>
             <div id="plus-icon"> <br> ➕</div>
             <div class="final">
                 UE <br>
-                <input type="number" id="input-final11" oninput="ue11()" placeholder="UE marks">
+                <input type="number" value="0" id="input-final11" oninput="ue11()" placeholder="UE marks">
             </div>
             <div id="equal-icon"> <br> =</div>
             <div class="total">
                 Total <br>
-                <input type="text" id="total-11" class="total" readonly>
+                <input type="text" value="0" id="total-11" class="total" readonly>
             </div>
         </div>
     </div>
     <hr>
     <div id="calculate-button">
-    <button class="all-gpa-btn" id="gpa-btn1" ondblclick="double()">CALCULATE GPA</button>
+    <button class="all-gpa-btn" id="gpa-btn1">CALCULATE GPA</button>
     <button class="all-gpa-btn" id="gpa-btn2">CALCULATE GPA</button>
     <button class="all-gpa-btn" id="gpa-btn3">CALCULATE GPA</button>
     <button class="all-gpa-btn" id="gpa-btn4">CALCULATE GPA</button>
     <button class="all-gpa-btn" id="gpa-btn5">CALCULATE GPA</button>
     <button class="all-gpa-btn" id="gpa-btn6">CALCULATE GPA</button>
     <button class="all-gpa-btn" id="gpa-btn7">CALCULATE GPA</button>
-        <div id="gpa-yako"></div>
     </div>
-    <br>
+    <div id="gpa-container" style="display: none;">
+                <span>UNA GPA YA:</span> <br> <span id="umepata-gpa-ya"></span> <br> <span id="status"></span>
+            </div>
+    <button id="recalculate" onclick="mama()">RE-CALCULATE</button>
     <div class="maelezo" id="maelezo2">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis eius molestias et omnis velit eligendi rerum cum non, libero aliquid tempora laborum illum, alias facilis?
     </div>
