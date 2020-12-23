@@ -125,9 +125,9 @@ function ue9() {
 }
 
 function cWork10() {
-    let cWorkInput = Number(document.getElementById('input-course-work3').value)
-    let ueInput = Number(document.getElementById('input-final3').value)
-    let total = document.getElementById('total-3')
+    let cWorkInput = Number(document.getElementById('input-course-work10').value)
+    let ueInput = Number(document.getElementById('input-final10').value)
+    let total = document.getElementById('total-10')
     total.value = cWorkInput + ueInput
 }
 
@@ -139,9 +139,9 @@ function ue10() {
 }
 
 function cWork11() {
-    let cWorkInput = Number(document.getElementById('input-course-work3').value)
-    let ueInput = Number(document.getElementById('input-final3').value)
-    let total = document.getElementById('total-3')
+    let cWorkInput = Number(document.getElementById('input-course-work11').value)
+    let ueInput = Number(document.getElementById('input-final11').value)
+    let total = document.getElementById('total-11')
     total.value = cWorkInput + ueInput
 }
 
