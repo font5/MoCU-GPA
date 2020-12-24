@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Frijole&family=Hanalei+Fill&family=Holtwood+One+SC&family=Nova+Flat&display=swap');
+
 *, *::before, *::after {
     box-sizing: border-box;
 }
@@ -18,11 +20,52 @@ header {
     top: 0;
 }
 
+header #title-mocu {
+    font-family: 'Hanalei Fill', cursive;
+    font-size: larger;
+}
+
+header #jina {
+    font-family: 'Courgette', cursive;
+}
+
+header #jina-animation {
+    color: yellow;
+    font-size: medium;
+    line-height: 1;
+    animation: letterspacing 5s infinite alternate ease-in-out;
+    letter-spacing: -2.2rem;
+    }
+
+    @keyframes letterspacing {
+        0% {
+            letter-spacing: -2.2rem;
+            filter: blur(.3rem);
+        }
+
+        50% {
+            filter: blur(.3rem);
+        }
+
+        100% {
+            letter-spacing: .2rem;
+            filter: blur(0rem);
+            color: white;
+        }
+    }
+
 .maelezo {
     padding: 8px;
     background-color: white;
     border-radius: 4px;
     margin-bottom: 10px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.maelezo ul {
+    margin-top: -12px;
 }
 
 #select-course {
@@ -31,18 +74,27 @@ header {
     text-align: center;
 }
 
-select {
-    height: 40px;
+#select-course select {
+    height: 50px;
     border-radius: 12px;
-    width: 80%;
+    width: 90%;
     text-align: center;
+    font-weight: bold;
 }
 
 #courses {
     background-color: bisque;
-    border-top-right-radius: 24px;
-    border-top-left-radius: 24px;
+    border-radius: 16px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
     display: none;
+}
+
+#courses hr {
+    width: 98%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .kozi {
@@ -107,7 +159,7 @@ select {
 }
 
 #umepata-gpa-ya {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Holtwood One SC', serif;
     font-size: larger;
     font-weight: bolder;
 }
@@ -126,6 +178,47 @@ select {
     background-color: white;
 }
 
+.second-maelezo-container {
+    width: 100%;
+    background-color: yellowgreen;
+    border-radius: 16px;
+}
+
+#maelezo2 {
+    margin-top: 16px;
+}
+
+#grades, #hesabu {
+    background-color: magenta;
+    color: black;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    padding: 8px;
+    border-radius: 6px;
+}
+
+#grades li {
+    font-family: 'nova flat', 'Times New Roman', Times, serif;
+}
+
+#hesabu {
+    background-color: lightpink;
+}
+
+#hesabu table {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+tr, th, td {
+    text-align: left;
+}
+
+td, th {
+    border: black 2px solid;
+}
+
 footer {
     background-color: black;
     color: white;
@@ -134,4 +227,13 @@ footer {
     width: 100%;
     height: fit-content;
     padding: 8px;
+}
+
+footer a {
+    text-decoration: none;
+    color: blue;
+}
+
+footer ul {
+    margin-top: 2px;
 }

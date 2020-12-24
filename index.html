@@ -14,21 +14,28 @@
     <script src="script/gpa-for-nine-courses.js" defer></script>
     <script src="script/gpa-for-ten-courses.js" defer></script>
     <script src="script/gpa-for-eleven-courses.js" defer></script>
+    <script src="https://kit.fontawesome.com/d0a5161a3f.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header>Welcome to MOCU GPA Calculator <br> Crafted by Shemdoe</header>
-    <br>
-    <br>
+    <header> <span id="title-mocu">MoCU GPA Calculator</span>  <br> <span id="jina">Crafted By <span id="jina-animation">Shemdoe <br> Georgie Maricky</span> </span> </header>
+    <br> <br>
+    <br> <br>
     <br>
     <br>
     <div class="maelezo" id="maelezo1">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, voluptate?
+        Tumia Calculator hii kukokotoa GPA. Calculator hii ita kokotoa alama hizo kwa grades za Chuo Kikuu Cha Ushirika Moshi na kutoa GPA ya mwisho utakayoweza kuipata kwa maksi ulizojaza.
+        <h4>Jinsi ya kutumia app hii:</h4>
+        <ul>
+            <li>Chagua Idadi ya kozi ulizonazo.</li>
+            <li>Jaza Maksi za C/W na UE.</li>
+            <li>Bonyeza <b>"Calculate GPA"</b>  button</li>
+        </ul>
     </div>
 
     <div id="select-course">
-        Select below number of courses <br>
+        <b>Weka idadi ya Kozi ulizonazo hapa chini 👇</b>  <br>
         <select id="number-of-courses" onchange="selectingNumberOfCourses()">
-            <option value="select" id="default">How many courses do you have?</option>
+            <option value="select" id="default">Chagua hapa idadi ya kozi ulizonazo...</option>
             <option value="five" id="fivec">5</option>
             <option value="six" id="sixc">6</option>
             <option value="seven" id="sevenc">7</option>
@@ -42,7 +49,7 @@
     <hr>
     <div id="courses">
         <br>
-        <h1 style="text-align: center; font-size: 24px;"> <u>Fill out your Course Work and UE marks below</u> </h1>
+        <h1 style="text-align: center; font-size: 20px;"> <u>Jaza maksi za Course Works na UE kwa kila kozi</u> </h1>
         <div class="taja-courses taja-tano-za-kwanza" id="taja-first">1<sup>st</sup> Course's Marks</div>
         <div class="kozi tano" id="course1">
             <div class="course-work">
@@ -54,7 +61,7 @@
                 UE <br>
                 <input type="number" value="0" id="input-final1" oninput="ue1()" placeholder="UE marks">
             </div>
-            <div id="equal-icon"> <br> =</div>
+            <div id="equal-icon"> <br> <i class="fas fa-equals"></i></div>
             <div class="total">
                 Total <br>
                 <input type="text" value="0" class="total" id="total-1" readonly>
@@ -73,7 +80,7 @@
                 UE <br>
                 <input type="number" value="0" id="input-final2" oninput="ue2()" placeholder="UE marks">
             </div>
-            <div id="equal-icon"> <br> =</div>
+            <div id="equal-icon"> <br> <i class="fas fa-equals"></i></div>
             <div class="total">
                 Total <br>
                 <input type="text" value="0" id="total-2" class="total" readonly>
@@ -92,7 +99,7 @@
                 UE <br>
                 <input type="number" value="0" id="input-final3" oninput="ue3()" placeholder="UE marks">
             </div>
-            <div id="equal-icon"> <br> =</div>
+            <div id="equal-icon"> <br> <i class="fas fa-equals"></i></div>
             <div class="total">
                 Total <br>
                 <input type="text" value="0" id="total-3" class="total" readonly>
@@ -111,7 +118,7 @@
                 UE <br>
                 <input type="number" value="0" id="input-final4" oninput="ue4()" placeholder="UE marks">
             </div>
-            <div id="equal-icon"> <br> =</div>
+            <div id="equal-icon"> <br> <i class="fas fa-equals"></i></div>
             <div class="total">
                 Total <br>
                 <input type="text" value="0" id="total-4" class="total" readonly>
@@ -130,7 +137,7 @@
                 UE <br>
                 <input type="number" value="0" id="input-final5" oninput="ue5()" placeholder="UE marks">
             </div>
-            <div id="equal-icon"> <br> =</div>
+            <div id="equal-icon"> <br> <i class="fas fa-equals"></i></div>
             <div class="total">
                 Total <br>
                 <input type="text" value="0" id="total-5" class="total" readonly>
@@ -149,7 +156,7 @@
                 UE <br>
                 <input type="number" value="0" id="input-final6" oninput="ue6()" placeholder="UE marks">
             </div>
-            <div id="equal-icon"> <br> =</div>
+            <div id="equal-icon"> <br> <i class="fas fa-equals"></i></div>
             <div class="total">
                 Total <br>
                 <input type="text" value="0" id="total-6" class="total" readonly>
@@ -168,7 +175,7 @@
                 UE <br>
                 <input type="number" value="0" id="input-final7" oninput="ue7()" placeholder="UE marks">
             </div>
-            <div id="equal-icon"> <br> =</div>
+            <div id="equal-icon"> <br> <i class="fas fa-equals"></i></div>
             <div class="total">
                 Total <br>
                 <input type="text" value="0" id="total-7" class="total" readonly>
@@ -187,7 +194,7 @@
                 UE <br>
                 <input type="number" value="0" id="input-final8" oninput="ue8()" placeholder="UE marks">
             </div>
-            <div id="equal-icon"> <br> =</div>
+            <div id="equal-icon"> <br> <i class="fas fa-equals"></i></div>
             <div class="total">
                 Total <br>
                 <input type="text" value="0" id="total-8" class="total" readonly>
@@ -206,7 +213,7 @@
                 UE <br>
                 <input type="number" value="0" id="input-final9" oninput="ue9()" placeholder="UE marks">
             </div>
-            <div id="equal-icon"> <br> =</div>
+            <div id="equal-icon"> <br> <i class="fas fa-equals"></i></div>
             <div class="total">
                 Total <br>
                 <input type="text" value="0" id="total-9" class="total" readonly>
@@ -225,7 +232,7 @@
                 UE <br>
                 <input type="number" value="0" id="input-final10" oninput="ue10()" placeholder="UE marks">
             </div>
-            <div id="equal-icon"> <br> =</div>
+            <div id="equal-icon"> <br> <i class="fas fa-equals"></i></div>
             <div class="total">
                 Total <br>
                 <input type="text" value="0" id="total-10" class="total" readonly>
@@ -244,12 +251,13 @@
                 UE <br>
                 <input type="number" value="0" id="input-final11" oninput="ue11()" placeholder="UE marks">
             </div>
-            <div id="equal-icon"> <br> =</div>
+            <div id="equal-icon"> <br> <i class="fas fa-equals"></i></div>
             <div class="total">
                 Total <br>
                 <input type="text" value="0" id="total-11" class="total" readonly>
             </div>
         </div>
+        <br>
     </div>
     <hr>
     <div id="calculate-button">
@@ -265,18 +273,73 @@
                 <span>UNA GPA YA:</span> <br> <span id="umepata-gpa-ya"></span> <br> <span id="status"></span>
             </div>
     <button id="recalculate" onclick="mama()">RE-CALCULATE</button>
-    <div class="maelezo" id="maelezo2">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis eius molestias et omnis velit eligendi rerum cum non, libero aliquid tempora laborum illum, alias facilis?
+
+   <br> <br> <br>
+  <div class="second-maelezo-container">
+      <br> <br>
+      <div class="maelezo" id="maelezo2">
+        <div id="grades">
+           <h3>Grades zilizotumika katika Calculator hii:</h3> 
+        <ul>
+            <li>A: = 70 – 100 &nbsp; &nbsp; Excellent</li>
+            <li>B+: = 65 – 69 &nbsp; &nbsp; Very Good</li>
+            <li>B: = 60 – 64 &nbsp; &nbsp; Good</li>
+            <li>C: = 50 – 59 &nbsp; &nbsp; Satisfactory</li>
+            <li>D: = 40 – 49 &nbsp; &nbsp; Marginal Fail</li>
+            <li>E: = 0 – 39 &nbsp; &nbsp; Absolute Fail</li>
+        </ul>
+        </div>
+        <div id="hesabu">
+            <table>
+                <caption> <h4>Final GPA imekokotolewa kupitia mahesabu haya:</h4> </caption>
+                <tr>
+                    <th>Grade</th> <th>Hesabu</th> <th>GPA</th>
+                </tr>
+                <tr>
+                    <td>A</td> <td>Y = 0.02X + 3</td> <td>4.4 – 5.0</td>
+                </tr>
+                <tr>
+                    <td>B+</td> <td>Y = 0.08X – 1.2</td> <td>4.0 – 4.3</td>
+                </tr>
+                <tr>
+                    <td>B</td> <td>Y = 0.2X – 9</td> <td>3.0 – 3.9</td>
+                </tr>
+                <tr>
+                    <td>C</td> <td>Y = 0.1X – 3</td> <td>2.0 – 2.9</td>
+                </tr>
+                <tr>
+                    <td>D</td> <td>Y = 0.1X - 3</td> <td>1.0 – 1.9</td>
+                </tr>
+                <tr>
+                    <td>E</td> <td>Y = (0.025)X</td> <td>0 – 0.9</td>
+                </tr>
+            </table>
+        </div>
     </div>
-    <br>
-    <br>
-    <br>
-    <br>
+    <br> <br>
+  </div>
+    
+    <br> <br> <br> <br> <br>
+    <br> <br> <br> <br> <br>
+    <br> <br> <br> <br>
+    <br> <br> <br> <br>
     <footer>
-        Crafted with ❤ by Shemdoe <br>
-        BSc.BICT2 Moshi Co-Operative University <br>
+        Crafted with ❤ by <b style="color: magenta;">Shemdoe</b>  <br>
+        <b style="color: magenta;">Georgie Maricky</b> <br>
+        BSc.BICT2 Moshi Co-Operative University <br> <hr>
         <div id="useful-links">
             Useful Links
+            <ul>
+                <li><a href="http://mocu.ac.tz/" target="_blank" rel="noopener noreferrer">MoCU Main Site</a></li>
+                <li><a href="http://41.59.211.102" target="_blank" rel="noopener noreferrer">MUSARIS External</a></li>
+            </ul>
+            <hr>
+            Others Projects Crafted By Shemdoe
+            <ul>
+                <li><a href="http://font5.xyz" target="_blank">Text Font Changer</a></li>
+                <li><a href="http://font5.xyz/lovecalculator/" target="_blank">Love Calculator</a></li>
+                <li><a href="http://dramastore.xyz" target="_blank">Korean Drama Store</a>(needs Telegram App)</li>
+            </ul>
         </div>
     </footer>
 </body>
