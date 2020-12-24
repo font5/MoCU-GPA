@@ -33,7 +33,7 @@ header #jina-animation {
     color: yellow;
     font-size: medium;
     line-height: 1;
-    animation: letterspacing 5s infinite alternate ease-in-out;
+    animation: letterspacing 3s infinite alternate ease-in-out;
     letter-spacing: -2.2rem;
     }
 
