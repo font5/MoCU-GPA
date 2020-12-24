@@ -74,12 +74,14 @@ header #jina-animation {
     text-align: center;
 }
 
-#select-course select {
+select {
     height: 50px;
     border-radius: 12px;
     width: 90%;
     text-align: center;
     font-weight: bold;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #courses {
